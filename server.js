@@ -1,4 +1,5 @@
-const express = require("express")
+const express = require("express");
+const UsersRouter = require("./routers/users.router");
 
 
 const app = express()
@@ -16,4 +17,4 @@ app.listen(PORT, () => {
     console.log(`Listening to PORT : ${PORT}`);
 })
 
-
+app.use("/users", UsersRouter)

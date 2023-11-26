@@ -12,9 +12,9 @@ const userSchema = mongoose.Schema({
     isCar: { type: String, default: false },
 })
 
-const User = mongoose.model("Users", userSchema)
+const Users = mongoose.model("Users", userSchema)
 
 
 module.exports = {
-    User
+    Users
 }
